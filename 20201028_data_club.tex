@@ -87,7 +87,7 @@
   \end{itemize}
 \end{frame}
 \begin{frame}[fragile]
-  \frametitle{In-source comments: not for users}
+  \frametitle{Dev docs are conversations between devs}
   \begin{minted}{cpp}
  /*
  * Dear Maintainer
@@ -102,15 +102,15 @@
   \end{minted}
   \footnotetext[1]{\href{https://loudprogrammer.net/best-comments-in-source-code-i-ever-encountered/}{Top 45 Best Comments In Source Code I Ever Encountered}}
 \end{frame}
-\begin{frame}[fragile]
-  \frametitle{Change logs/commit logs: not for users either}
-  \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\linewidth]{99_images/git_commit}
-  \end{figure}
-  \footnotetext[2]{\href{ https://xkcd.com/1296/  }{ xkcd: Git Commit  }}
-  \footnotetext[3]{\href{ https://chris.beams.io/posts/git-commit/  }{ How to Write a Git Commit Message  }}
-\end{frame}
+% \begin{frame}[fragile]
+  % \frametitle{Change logs/commit logs: not for users either}
+  % \begin{figure}[h]
+    % \centering
+    % \includegraphics[width=0.8\linewidth]{99_images/git_commit}
+  % \end{figure}
+  % \footnotetext[2]{\href{ https://xkcd.com/1296/  }{ xkcd: Git Commit  }}
+  % \footnotetext[3]{\href{ https://chris.beams.io/posts/git-commit/  }{ How to Write a Git Commit Message  }}
+% \end{frame}
 \begin{frame}[c]
   \frametitle{Docs for different target audiences: user docs}
   \begin{itemize}
@@ -120,7 +120,7 @@
   \end{itemize}
 \end{frame}
 \begin{frame}[c]
-  \frametitle{Documentation for users: separate from development}
+  \frametitle{Docs for users: separate from development}
   \begin{itemize}
     \item \textbf{Must} clearly define what the tool (software) does,
     \item \textbf{Must} define \alert{entry-points} for users to get started with the software,
@@ -131,7 +131,11 @@
     \item \textbf{May} be generated from comments in the source code but \textbf{must not} be written like developer documentation.
   \end{itemize}
 \end{frame}
-\section{Publishing documentation: software}
+\begin{frame}[c]
+  \frametitle{Case study: NeuroML}
+  \href{https://neuroml.org}{neuroml.org}
+\end{frame}
+\section{Publishing docs: software}
 \begin{frame}[c]
   \frametitle{Documentation tools: translators}
   Docs sources \(\rightarrow\) documentation tool \(\rightarrow\) HTML/PDF/\ldots{}\\
@@ -143,8 +147,8 @@
     \item Inputs sources:
       \begin{itemize}
         \item reStructuredText (default),
-        \item Markdown (CommonMark \emph{flavour}\footnotemark[5]{})
-        \item MyST (Markdown + reStructuredText)\footnotemark[6]{}
+        \item Markdown (CommonMark \emph{flavour}\footnotemark[3]{})
+        \item MyST (Markdown + reStructuredText)\footnotemark[4]{}
       \end{itemize}
     \item Output formats:
       \begin{itemize}
@@ -152,12 +156,12 @@
         \item \LaTeX{} for PDFs, ePub, Texinfo, Man pages, \ldots{}
       \end{itemize}
   \end{itemize}
-  \footnotetext[4]{\href{ https://www.sphinx-doc.org/en/master/  }{ Overview --- Sphinx 4.0.0+ documentation  }}
-  \footnotetext[5]{The original Markdown specification is not unambiguous, and so multiple flavours of Markdown have cropped up over the years. CommonMark is one attempt at standardisation. GitHub Flavoured Markdown is another that GitHub created.}
-  \footnotetext[6]{\href{ https://myst-parser.readthedocs.io/en/latest/  }{ MyST - Markedly Structured Text  }}
+  \footnotetext[2]{\href{ https://www.sphinx-doc.org/en/master/  }{ Overview --- Sphinx 4.0.0+ documentation  }}
+  \footnotetext[3]{The original Markdown specification is not unambiguous, and so multiple flavours of Markdown have cropped up over the years. CommonMark is one attempt at standardisation. GitHub Flavoured Markdown is another that GitHub created.}
+  \footnotetext[4]{\href{ https://myst-parser.readthedocs.io/en/latest/  }{ MyST - Markedly Structured Text  }}
 \end{frame}
 \begin{frame}[c]
-  \frametitle{Sphinx example: OCNS Software SIG documentation}
+  \frametitle{Sphinx examples}
   Demo!
 \end{frame}
 \begin{frame}[c]
@@ -177,10 +181,10 @@
       \end{itemize}
     \item \alert{Interactive pages!}
       \begin{itemize}
-        \item Binder, JupyterHub, Google Colab, ThebeLab\footnotemark[8]{}.
+        \item Binder, JupyterHub, Google Colab, ThebeLab\footnotemark[6]{}.
       \end{itemize}
-      \footnotetext[7]{\href{ https://jupyterbook.org/intro.html  }{ Books with Jupyter  }}
-      \footnotetext[8]{Embedded: so no need to leave the page.}
+      \footnotetext[5]{\href{ https://jupyterbook.org/intro.html  }{ Books with Jupyter  }}
+      \footnotetext[6]{Embedded: so no need to leave the page.}
   \end{itemize}
 \end{frame}
 \begin{frame}[c]
@@ -188,7 +192,7 @@
   Demo!
 \end{frame}
 \begin{frame}[c]
-  \frametitle{Lab website updates? Time?}
+  \frametitle{Lab website updates?}
   \href{www.silverlab.org}{www.silverlab.org}
 \end{frame}
 \end{document}
